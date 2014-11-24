@@ -19,6 +19,9 @@ body{
     font-size: 14px;
     font-family: "Open Sans",Arial,sans-serif;
 }
+.menu-toggle{
+    cursor:pointer;
+}
 a,button,.button,li{
     transition: all, background .3s ease-in, border .3s ease-in;
 }
@@ -429,6 +432,38 @@ footer > .container > ul > li > a {
         margin: auto;
     }
 }
+@media (max-width: 900px){
+    header > .container > ul{
+     display: none;
+        padding: 0;
+    }
+    .menu-toggle{
+        display: block;
+        height: 6px;
+        width: 40px;
+        background: #fff;
+        border-radius: 5px;
+        margin: 35px auto;
+    }
+    .menu-toggle:before{
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 40px;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+     .menu-toggle:after{
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 40px;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: -10px;
+    }
+}
 @media (max-width:768px){
     .logo{
         float: none;
@@ -440,6 +475,12 @@ footer > .container > ul > li > a {
         display: block;
         margin: auto;
         text-align: center;
+    }
+    .menu-toggle:before{
+        margin-left: -20px;
+    }
+    .menu-toggle:after{
+        margin-left: -20px;
     }
     header > .container > ul{
         float: none;
@@ -486,12 +527,16 @@ footer > .container > ul > li > a {
     .develop > .container > h2:after{
         margin-top: 0px;
     }
-
+     header > .container > ul{
+     display: none;
+        padding: 0;
+    }
 }
 @media (max-width: 650px){
       header + section{
           height: 850px;
       }
+
 }
 @media (max-width: 480px){
     header{
@@ -531,6 +576,13 @@ footer > .container > ul > li > a {
     header > .container > ul{
      display: none;
         padding: 0;
+    }
+     header > .container > ul{
+     display: none;
+        padding: 0;
+    }
+    .js-menu .open{
+
     }
     .menu-toggle{
         display: inline-block;
