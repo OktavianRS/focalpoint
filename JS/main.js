@@ -1,5 +1,8 @@
 jQuery(function($){
     $('.menu-toggle').click(function(){
-        $('.js-menu').toggleClass('open');
+        $('body').toggleClass('menu-open');
+    });
+     $('.menu-toggle').click(function(){
+        $('.menu').toggleClass('js-menu');
     });
 });
