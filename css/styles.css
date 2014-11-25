@@ -431,9 +431,9 @@ footer > .container > ul > li > a {
         float: left;
     }
     .menu{
-        display: none;
+       display: none;
     }
-    .js-menu{
+   .js-menu{
         top: 0;
         right: 0;
         bottom: 0;
